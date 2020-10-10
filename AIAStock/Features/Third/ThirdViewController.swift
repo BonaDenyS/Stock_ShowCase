@@ -29,9 +29,9 @@ class ThirdViewController: UIViewController {
     
     @IBAction func applySettings(_ sender: Any) {
         if apikeyField.text!.count > 0 {
-            let data = Data(from: apikeyField.text)
-            let _ = KeyChain.save(key: Query.apikey.rawValue, data: data)
+            KeychainSwift().set(apikeyField.text!, forKey: Query.apikey.rawValue)
         }
+        
         if let appDomain = Bundle.main.bundleIdentifier {
             UserDefaults.standard.removePersistentDomain(forName: appDomain)
         }

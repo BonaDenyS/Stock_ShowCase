@@ -15,7 +15,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wy-hi-E9S">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wy-hi-E9S" customClass="RoundView" customModule="AIAStock" customModuleProvider="target">
                         <rect key="frame" x="104" y="10" width="94" height="24"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nd-Er-eas">
@@ -32,8 +32,15 @@
                             <constraint firstItem="1nd-Er-eas" firstAttribute="centerX" secondItem="6wy-hi-E9S" secondAttribute="centerX" id="Kld-Fw-Mme"/>
                             <constraint firstAttribute="width" constant="94" id="vHA-0F-YRu"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="topLeft" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="topRight" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="owP-Hd-TW0">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="owP-Hd-TW0" customClass="RoundView" customModule="AIAStock" customModuleProvider="target">
                         <rect key="frame" x="104" y="42" width="94" height="24"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaW-Mz-3XL">
@@ -50,8 +57,15 @@
                             <constraint firstItem="jaW-Mz-3XL" firstAttribute="centerX" secondItem="owP-Hd-TW0" secondAttribute="centerX" id="mTp-g5-6JA"/>
                             <constraint firstAttribute="height" constant="24" id="uiI-Ev-uhw"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLeft" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="bottomRight" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ex-NH-PdJ">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ex-NH-PdJ" customClass="RoundView" customModule="AIAStock" customModuleProvider="target">
                         <rect key="frame" x="206" y="10" width="94" height="24"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzn-dY-dox">
@@ -68,8 +82,15 @@
                             <constraint firstItem="Rzn-dY-dox" firstAttribute="centerY" secondItem="8ex-NH-PdJ" secondAttribute="centerY" id="cbg-1I-PC9"/>
                             <constraint firstAttribute="width" constant="94" id="hqW-mE-RqF"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="topLeft" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="topRight" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NES-rC-73f">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NES-rC-73f" customClass="RoundView" customModule="AIAStock" customModuleProvider="target">
                         <rect key="frame" x="206" y="42" width="94" height="24"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiQ-gZ-4WW">
@@ -86,6 +107,13 @@
                             <constraint firstAttribute="height" constant="24" id="fvz-mF-oht"/>
                             <constraint firstAttribute="width" constant="94" id="iIH-0y-vMA"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLeft" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="bottomRight" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020-20-20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jvq-o4-Gpj">
                         <rect key="frame" x="20" y="73" width="76" height="16"/>
@@ -117,7 +145,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t8c-gn-wSS">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t8c-gn-wSS" customClass="RoundView" customModule="AIAStock" customModuleProvider="target">
                         <rect key="frame" x="308" y="10" width="94" height="24"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0H-VG-1nK">
@@ -134,8 +162,15 @@
                             <constraint firstAttribute="height" constant="24" id="dPY-mQ-I3C"/>
                             <constraint firstAttribute="width" constant="94" id="o7d-bj-EWR"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="topLeft" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="topRight" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="36I-pB-Fks">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="36I-pB-Fks" customClass="RoundView" customModule="AIAStock" customModuleProvider="target">
                         <rect key="frame" x="308" y="42" width="94" height="24"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClJ-2C-tKr">
@@ -152,6 +187,13 @@
                             <constraint firstAttribute="width" constant="94" id="a9e-29-lYR"/>
                             <constraint firstItem="ClJ-2C-tKr" firstAttribute="centerX" secondItem="36I-pB-Fks" secondAttribute="centerX" id="ccq-4c-L3f"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLeft" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="bottomRight" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
                 <constraints>

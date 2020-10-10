@@ -21,7 +21,7 @@ extension SecondCoordinator: CoordinatorProtocol {
         let secondView = SecondViewController.create()
         let viewModel = SecondViewModel()
         secondView.viewModel = viewModel
-//        navigationController.tabBarItem.image = UIImage(named: "First")!.resized(toWidth: 30.0)
+        navigationController.tabBarItem.image = UIImage(named: "compare")!.resized(toWidth: 30.0)
         navigationController.tabBarItem.imageInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 3.0, right: 2.0)
         navigationController.pushViewController(secondView, animated: true)
     }

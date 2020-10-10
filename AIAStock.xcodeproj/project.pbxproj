@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DC42C7B2531485F0082CE73 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC42C7A2531485F0082CE73 /* UIImage+Resize.swift */; };
+		5DC42C7E2531496E0082CE73 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC42C7C2531496E0082CE73 /* RoundButton.swift */; };
+		5DC42C7F2531496E0082CE73 /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC42C7D2531496E0082CE73 /* RoundView.swift */; };
+		5DC42C81253164F10082CE73 /* KeychainSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC42C80253164F10082CE73 /* KeychainSwift.swift */; };
+		5DC42C83253165180082CE73 /* KeychainSwiftAccessOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC42C82253165180082CE73 /* KeychainSwiftAccessOptions.swift */; };
+		5DC42C852531654D0082CE73 /* TegKeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC42C842531654D0082CE73 /* TegKeychainConstants.swift */; };
 		5DF13F81252F4E1A00FBA615 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF13F80252F4E1A00FBA615 /* AppDelegate.swift */; };
 		5DF13F8A252F4E1B00FBA615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DF13F89252F4E1B00FBA615 /* Assets.xcassets */; };
 		5DF13F8D252F4E1B00FBA615 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF13F8B252F4E1B00FBA615 /* LaunchScreen.storyboard */; };
@@ -26,7 +32,6 @@
 		5DF13FE32530959800FBA615 /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF13FE22530959800FBA615 /* SecondViewModel.swift */; };
 		5DF13FE5253095B000FBA615 /* SecondCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF13FE4253095B000FBA615 /* SecondCoordinator.swift */; };
 		5DF13FE82530B5DB00FBA615 /* ThirdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DF13FE72530B5DB00FBA615 /* ThirdView.xib */; };
-		5DF13FEB2530C41D00FBA615 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF13FEA2530C41D00FBA615 /* KeyChain.swift */; };
 		5DF13FED2530CA2A00FBA615 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF13FEC2530CA2A00FBA615 /* ThirdViewController.swift */; };
 		5DF13FEF2530D0E700FBA615 /* ThirdCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF13FEE2530D0E700FBA615 /* ThirdCoordinator.swift */; };
 		5DF13FF12530D14D00FBA615 /* ThirdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF13FF02530D14D00FBA615 /* ThirdViewModel.swift */; };
@@ -43,6 +48,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5DC42C7A2531485F0082CE73 /* UIImage+Resize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
+		5DC42C7C2531496E0082CE73 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		5DC42C7D2531496E0082CE73 /* RoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
+		5DC42C80253164F10082CE73 /* KeychainSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainSwift.swift; sourceTree = "<group>"; };
+		5DC42C82253165180082CE73 /* KeychainSwiftAccessOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainSwiftAccessOptions.swift; sourceTree = "<group>"; };
+		5DC42C842531654D0082CE73 /* TegKeychainConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TegKeychainConstants.swift; sourceTree = "<group>"; };
 		5DF13F7D252F4E1A00FBA615 /* AIAStock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIAStock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DF13F80252F4E1A00FBA615 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DF13F89252F4E1B00FBA615 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,7 +77,6 @@
 		5DF13FE22530959800FBA615 /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
 		5DF13FE4253095B000FBA615 /* SecondCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCoordinator.swift; sourceTree = "<group>"; };
 		5DF13FE72530B5DB00FBA615 /* ThirdView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdView.xib; sourceTree = "<group>"; };
-		5DF13FEA2530C41D00FBA615 /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
 		5DF13FEC2530CA2A00FBA615 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		5DF13FEE2530D0E700FBA615 /* ThirdCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCoordinator.swift; sourceTree = "<group>"; };
 		5DF13FF02530D14D00FBA615 /* ThirdViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewModel.swift; sourceTree = "<group>"; };
@@ -198,7 +208,12 @@
 		5DF13FE92530C40500FBA615 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				5DF13FEA2530C41D00FBA615 /* KeyChain.swift */,
+				5DC42C7C2531496E0082CE73 /* RoundButton.swift */,
+				5DC42C7D2531496E0082CE73 /* RoundView.swift */,
+				5DC42C7A2531485F0082CE73 /* UIImage+Resize.swift */,
+				5DC42C80253164F10082CE73 /* KeychainSwift.swift */,
+				5DC42C82253165180082CE73 /* KeychainSwiftAccessOptions.swift */,
+				5DC42C842531654D0082CE73 /* TegKeychainConstants.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -315,14 +330,19 @@
 				5DF13FB5252F53B500FBA615 /* FirstViewModel.swift in Sources */,
 				5DF13FF12530D14D00FBA615 /* ThirdViewModel.swift in Sources */,
 				5DF13FD72530507000FBA615 /* FirstCoordinator.swift in Sources */,
+				5DC42C7F2531496E0082CE73 /* RoundView.swift in Sources */,
 				5DF13FD52530500E00FBA615 /* CoordinatorProtocol.swift in Sources */,
 				5DF13FE32530959800FBA615 /* SecondViewModel.swift in Sources */,
 				5DF13FD3253022E900FBA615 /* AppNetwork.swift in Sources */,
 				5DF13FED2530CA2A00FBA615 /* ThirdViewController.swift in Sources */,
+				5DC42C81253164F10082CE73 /* KeychainSwift.swift in Sources */,
 				5DF13FE12530958B00FBA615 /* SecondViewController.swift in Sources */,
+				5DC42C852531654D0082CE73 /* TegKeychainConstants.swift in Sources */,
 				5DF13FCD2530156000FBA615 /* FirstViewController.swift in Sources */,
+				5DC42C7B2531485F0082CE73 /* UIImage+Resize.swift in Sources */,
+				5DC42C83253165180082CE73 /* KeychainSwiftAccessOptions.swift in Sources */,
+				5DC42C7E2531496E0082CE73 /* RoundButton.swift in Sources */,
 				5DF13FEF2530D0E700FBA615 /* ThirdCoordinator.swift in Sources */,
-				5DF13FEB2530C41D00FBA615 /* KeyChain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,7 +504,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bonadenys.com.AIAStock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -502,7 +522,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bonadenys.com.AIAStock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

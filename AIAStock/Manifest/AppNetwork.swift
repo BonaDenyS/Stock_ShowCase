@@ -23,14 +23,15 @@ class AppNetwork{
     private let base_url = "https://www.alphavantage.co/"
     
     init() {
-        if let receivedData = KeyChain.load(key: Query.apikey.rawValue) {
-            self.base_key = receivedData.to(type: String.self)
+        if let receivedData = KeychainSwift().get(Query.apikey.rawValue) {
+            self.base_key = receivedData
         }
-        if let interval = UserDefaults.standard.string(forKey: Query.interval.rawValue) {
-            self.interval = interval
+        
+        if UserDefaults.standard.string(forKey: Query.interval.rawValue) != nil {
+            self.interval = UserDefaults.standard.string(forKey: Query.interval.rawValue)!
         }
-        if let outputsize = UserDefaults.standard.string(forKey: Query.outputsize.rawValue) {
-            self.outputsize = outputsize
+        if UserDefaults.standard.string(forKey: Query.outputsize.rawValue) != nil {
+            self.outputsize = UserDefaults.standard.string(forKey: Query.outputsize.rawValue)!
         }
     }
 

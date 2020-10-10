@@ -60,6 +60,10 @@
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APIKey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LV0-Pf-9i9">
                             <rect key="frame" x="180" y="30" width="54" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="54" id="0oF-nE-0sQ"/>
+                                <constraint firstAttribute="height" constant="21" id="Z5F-GR-7yA"/>
+                            </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -71,15 +75,21 @@
                                 <constraint firstAttribute="height" constant="40" id="h0M-rf-Bsy"/>
                             </constraints>
                         </pickerView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jca-an-cPF">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jca-an-cPF" customClass="RoundButton" customModule="AIAStock" customModuleProvider="target">
                             <rect key="frame" x="20" y="275" width="374" height="50"/>
-                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.80924654009999997" green="0.1776859164" blue="0.17250767350000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="ZVK-Ae-IG0"/>
                             </constraints>
-                            <state key="normal" title="Apply">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="APPLY">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="applySettings:" destination="-1" eventType="touchUpInside" id="k1l-fl-Ypn"/>
                             </connections>
@@ -87,6 +97,7 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
+                        <constraint firstItem="LV0-Pf-9i9" firstAttribute="centerX" secondItem="MwN-7g-aHw" secondAttribute="centerX" id="2nD-FN-ZIz"/>
                         <constraint firstItem="oSa-cJ-qo2" firstAttribute="leading" secondItem="MwN-7g-aHw" secondAttribute="leading" constant="68" id="53w-Fn-a0b"/>
                         <constraint firstItem="oSa-cJ-qo2" firstAttribute="top" secondItem="vGe-bC-DD9" secondAttribute="bottom" constant="26" id="6Qy-AQ-qxc"/>
                         <constraint firstItem="inJ-wN-9D7" firstAttribute="top" secondItem="vGe-bC-DD9" secondAttribute="bottom" constant="26" id="A0t-VW-8ok"/>
@@ -96,7 +107,6 @@
                         <constraint firstAttribute="trailing" secondItem="Jca-an-cPF" secondAttribute="trailing" constant="20" id="NUk-JY-icM"/>
                         <constraint firstAttribute="bottom" secondItem="Jca-an-cPF" secondAttribute="bottom" constant="25" id="PZ1-TF-Ok9"/>
                         <constraint firstAttribute="trailing" secondItem="vGe-bC-DD9" secondAttribute="trailing" constant="67" id="Phg-EA-C6k"/>
-                        <constraint firstAttribute="trailing" secondItem="LV0-Pf-9i9" secondAttribute="trailing" constant="180" id="TjW-Km-Lf0"/>
                         <constraint firstItem="Jca-an-cPF" firstAttribute="leading" secondItem="MwN-7g-aHw" secondAttribute="leading" constant="20" id="U2g-Ug-7Ws"/>
                         <constraint firstItem="3Aa-KK-zdi" firstAttribute="top" secondItem="inJ-wN-9D7" secondAttribute="bottom" constant="14" id="U8S-ba-Edb"/>
                         <constraint firstAttribute="trailing" secondItem="inJ-wN-9D7" secondAttribute="trailing" constant="67.5" id="VSG-d9-AHi"/>
@@ -104,7 +114,6 @@
                         <constraint firstItem="LV0-Pf-9i9" firstAttribute="top" secondItem="MwN-7g-aHw" secondAttribute="top" constant="30" id="bRw-HQ-ESk"/>
                         <constraint firstAttribute="trailing" secondItem="3Aa-KK-zdi" secondAttribute="trailing" constant="35" id="gV4-09-jze"/>
                         <constraint firstAttribute="width" constant="414" id="j1R-V7-emx"/>
-                        <constraint firstItem="LV0-Pf-9i9" firstAttribute="leading" secondItem="MwN-7g-aHw" secondAttribute="leading" constant="180" id="jUs-pV-EU9"/>
                         <constraint firstItem="vGe-bC-DD9" firstAttribute="top" secondItem="LV0-Pf-9i9" secondAttribute="bottom" constant="8" id="tER-Rr-4h1"/>
                     </constraints>
                 </view>
