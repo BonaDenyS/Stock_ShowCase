@@ -16,18 +16,18 @@ class ThirdViewController: UIViewController {
     @IBOutlet weak var outputsizePicker: UIPickerView!
     
     
-    private var interval = ""
-    private var outputsize = ""
+    private var interval = "1min"
+    private var outputsize = "compact"
     
     var viewModel: ThirdViewModel?
 
-        
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
     }
     
     @IBAction func applySettings(_ sender: Any) {
+        showLoading()
         if apikeyField.text!.count > 0 {
             KeychainSwift().set(apikeyField.text!, forKey: Query.apikey.rawValue)
         }
@@ -37,6 +37,8 @@ class ThirdViewController: UIViewController {
         }
         UserDefaults.standard.set(interval, forKey: Query.interval.rawValue)
         UserDefaults.standard.set(outputsize.lowercased(), forKey: Query.outputsize.rawValue)
+        apikeyField.text = ""
+        hideLoading()
     }
 }
 
@@ -59,6 +61,21 @@ extension ThirdViewController {
         navigationController?.navigationBar.titleTextAttributes = textAttributes
         
         self.hideKeyboardWhenTappedAround()
+    }
+    
+    func showLoading() {
+        let alert = UIAlertController(title: nil, message: "Please wait...", preferredStyle: .alert)
+
+        let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
+        loadingIndicator.hidesWhenStopped = true
+        loadingIndicator.style = UIActivityIndicatorView.Style.medium
+        loadingIndicator.startAnimating();
+
+        alert.view.addSubview(loadingIndicator)
+        present(alert, animated: true, completion: nil)
+    }
+    func hideLoading() {
+        dismiss(animated: false, completion: nil)
     }
 }
 

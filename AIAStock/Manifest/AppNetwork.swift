@@ -27,10 +27,10 @@ class AppNetwork{
             self.base_key = receivedData
         }
         
-        if UserDefaults.standard.string(forKey: Query.interval.rawValue) != nil {
+        if UserDefaults.standard.string(forKey: Query.interval.rawValue)!.count > 0 {
             self.interval = UserDefaults.standard.string(forKey: Query.interval.rawValue)!
         }
-        if UserDefaults.standard.string(forKey: Query.outputsize.rawValue) != nil {
+        if UserDefaults.standard.string(forKey: Query.outputsize.rawValue)!.count >  0 {
             self.outputsize = UserDefaults.standard.string(forKey: Query.outputsize.rawValue)!
         }
     }
